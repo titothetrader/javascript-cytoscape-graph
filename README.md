@@ -1,2 +1,2 @@
 # javascript-cytoscape-graphy
-Javascript implementation of cytoscape with many extensions
+ Javascript test cytoscape editing with extensions

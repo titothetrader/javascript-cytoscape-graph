@@ -1,0 +1,14 @@
+.add-node-area input {
+    display: block;
+    width: 100%;
+}
+
+.add-node-area .btn-add {
+    background-color: steelblue;
+    color: white;
+    opacity: 85%;
+}
+
+.add-node-btns {
+    padding: 5px;
+}

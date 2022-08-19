@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Graphy - Javascript</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="#">
+
+	 <!-- Useful libraries -->
+    <script src="/a0ff5fb74daa17e791b8.js"></script>
+	<script src="/dbaf33a925f3bb7ec851.js"></script>
+	<link href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+	 <!-- Color picker -->
+	 <script src="/a563f5ffb2f461870ee8.js"></script>
+	 <script src="/2b00f983c7b7bf28cfda.js"></script>
+	 <link rel="stylesheet" href="/c93397e696742d5b105f.css">
+    
+	<!-- Cytoscape related scripts  -->
+	<script src="/01b6e21ef154e099d065.js"></script>
+	<!-- Needed for cytoscape-edgehandles  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.js"></script> 
+    <script src="/36451a8f87730622fcad.js"></script>
+	<script src="/fd638db58d51e9367cec.js"></script>
+	<script src="/e5f4b4b591754e1ee2c8.js"></script>
+	<script src="/58cb36e681f5d0786219.js"></script>
+	<script src="/ce8ce6b644262d2ef47b.js"></script>
+	<script src="/4deb823d35463058d4bc.js"></script>
+	<script src="/90cac8de67c2b9f9e222.js"></script>
+	<script src="/f6481736c105e1ed2c60.js"></script>
+	<script src="/f4c326522d4d92ce6f8e.js"></script>
+	<!-- Needed for cytoscape-spread.js  -->
+	<script src="/c570d25b1df2988ecb08.js"></script> 
+	<script src="/e60fb5242cd0898d4fb4.js"></script>
+	<!-- Needed for cytoscape-dagre.js  -->
+	<script src="/78f96c75764cffeeaf8f.js"></script>
+	<script src="/36f13c3b85e2151e48e0.js"></script>
+	<!-- Needed for cytoscape-klay.js  -->
+	<script src="/4bf71a851e9edb94c06a.js"></script>
+	<script src="/23a513853780c270ce6c.js"></script>
+	<script src="/7e091d41c030c15e187e.js"></script>
+	<script src="/d341ccc96756291743bc.js"></script>
+	
+
+	 <!-- Custom variables & styles -->
+    <script src="/08c5dc8acd6f807131da.js"></script>
+    <script src="/0c39a1358487069814bb.js"></script>
+
+
+	<!-- Main styles -->
+    <link rel="stylesheet" href="/4c0e0b543ea9141d53d9.css">
+<script defer src="/bundle.js"></script></head>
+<body id="full-body" class="full-body">
+
+	<header-section></header-section>
+
+    <div id="graph">
+		<h1 id="graph-title" class="graph-title"></h1>
+    </div>
+
+	<script>
+		// let elements;
+		// let graphStyle;
+		
+		let graphTitle;
+		let layout;
+
+		let nodeSelected ='';
+		let edgeSelected = '';
+
+		let cy = cytoscape({
+			container: document.getElementById('graph'),
+			layout: {
+				name: 'circle'
+			},
+			elements: elements,
+			style: graphStyle
+		});
+
+		let eh = cy.edgehandles();
+		let cdnd = cy.compoundDragAndDrop();
+
+		function graphUpdate() {
+			cy.center();
+			cy.fit();
+			cy.resize();
+			cy.reset();
+		}
+	</script>
+
+	<script src="/d3fb09202c249b09a601.js"></script>
+    <script src="/e718f6a5565a4f9fb33e.js"></script>
+    <script src="/be35d65dacaff6a9a9d5.js"></script>
+    <script src="/f55c9ae99de52537d14b.js"></script>
+	<script src="/4151106689575ee38126.js"></script>
+	<script src="/437b39fee015b2531428.js"></script>
+	<script src="/cdb08e745e6a8ed4caea.js"></script>
+	<script src="/299439d894c3e1fd1487.js"></script>
+	<script src="/3b58d2f4da9885a5ba0b.js"></script>
+	<script src="/0e7dab1a8186b704f3f5.js"></script>
+	<script src="/addde21dad654cf4c1fc.js"></script>
+	<script src="/6b8524863a019e73905e.js"></script>
+	<script src="/97b4ed56fe9c3df11d1a.js"></script>
+	<script src="/2dedba59a8775a5cec96.js"></script>
+	<script src="/fae070338af0168d007a.js"></script>
+	<script src="/fbd14077b7f3c87eeff6.js"></script>
+	<script src="/4bbf16d53eac43026775.js"></script>
+	<script src="/3960fab6783ad3ed40fb.js"></script>
+	<script src="/ee5995126d95fb25583d.js"></script>
+</body>
+</html>

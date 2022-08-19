@@ -1,0 +1,25 @@
+.drop-area {
+    border: 2px dashed steelblue;
+    border-radius: 20px;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    margin: 5px 5px 5px 10px;
+  }
+
+  .drop-area label  {
+    cursor: pointer;
+  }
+
+  .drop-area.highlight {
+    border: 3px dashed purple;
+  }
+
+  .drop-area .drop-label {
+    margin-top: 20px;
+    align-self: center;
+  }
+
+  #fileUpload {
+    visibility: hidden;
+  }

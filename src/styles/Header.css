@@ -1,0 +1,24 @@
+.header {
+    height: 180px;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: space-around;
+    align-items: center;
+    grid-column-gap: 20px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.selected-node-edge {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background: steelblue;
+    color: white;
+    opacity: 85%;
+    border-radius: 5px;
+    border: 1px solid steelblue;
+    width: 88%;
+    grid-column-start: span 2;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Graphy - Javascript</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="#">
+
+	 <!-- Useful libraries -->
+    <script src="./scripts/jquery-3.6.0.min.js"></script>
+	<script src="./scripts/html2canvas.min.js"></script>
+	<link href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+	 <!-- Color picker -->
+	 <script src="./scripts/vanilla-picker.csp.min.js"></script>
+	 <script src="./scripts/vanilla-picker.min.js"></script>
+	 <link rel="stylesheet" href="./styles/vanilla-picker.csp.css">
+    
+	<!-- Cytoscape related scripts  -->
+	<script src="./scripts/cytoscape.min.js"></script>
+	<script src="./scripts/cytoscape-undo-redo.js"></script>
+	<script src="./scripts/cytoscape-clipboard.js"></script>
+	<script src="./scripts/cytoscape-lasso.min.js"></script>
+	<!-- Needed for Edge EdgeEditing -->
+	<!-- <script src="./scripts/konva.min.js"></script> -->
+	<!-- <script src="./scripts/cytoscape-edge-editing.js"></script> -->
+	<!-- Needed for cytoscape-edgehandles  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./scripts/cytoscape-edgehandles.js"></script>
+	<script src="./scripts/cytoscape-cxtmenu.js"></script>
+	<script src="./scripts/layout-base.js"></script>
+	<script src="./scripts/cose-base.js"></script>
+	<script src="./scripts/cytoscape-fcose.js"></script>
+	<script src="./scripts/cytoscape-cose-bilkent.js"></script>
+	<script src="./scripts/cola.min.js"></script>
+	<script src="./scripts/cytoscape-cola.js"></script>
+	<script src="./scripts/cytoscape-euler.js"></script>
+	<!-- Needed for cytoscape-spread.js  -->
+	<script src="./scripts/weaver.min.js"></script> 
+	<script src="./scripts/cytoscape-spread.js"></script>
+	<!-- Needed for cytoscape-dagre.js  -->
+	<script src="./scripts/dagre.js"></script>
+	<script src="./scripts/cytoscape-dagre.js"></script>
+	<!-- Needed for cytoscape-klay.js  -->
+	<script src="./scripts/klay.js"></script>
+	<script src="./scripts/cytoscape-klay.js"></script>
+	<script src="./scripts/cytoscape-expand-collapse.js"></script>
+	<script src="./scripts/cytoscape-compound-drag-and-drop.js"></script>
+	
+
+	 <!-- Custom variables & styles -->
+    <script src="./default-data/elements.js"></script>
+    <script src="./default-data/graphStyle.js"></script>
+
+
+	<!-- Main styles -->
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body id="full-body" class="full-body">
+	<header-section></header-section>
+	
+    <div id="graph">
+		<h1 id="graph-title" class="graph-title"></h1>
+    </div>
+
+	<script>
+		let graphTitle;
+		let layout;
+
+		let nodeSelected ='';
+		let edgeSelected = '';
+
+		let undo;
+		let undoContent;
+
+		let cy = cytoscape({
+			container: document.getElementById('graph'),
+			layout: {
+				name: 'circle'
+			},
+			elements: elements,
+			style: graphStyle,
+			boxSelectionEnabled: true,
+			wheelSensitivity: .3
+		});
+
+		let eh = cy.edgehandles();
+		let cdnd = cy.compoundDragAndDrop();
+		let cb = cy.clipboard();
+		let ur = cy.undoRedo({
+			isDebug: true
+		});
+
+		function graphUpdate() {
+			cy.center();
+			cy.fit();
+			cy.resize();
+			cy.reset();
+		}
+	</script>
+
+<!-- Cytoscape Functionalities -->
+<script src="./components/Clipboard/Clipboard.js"></script>
+<script src="./components/CompoundDragAndDrop/CompoundDragAndDrop.js"></script>
+<script src="./components/CxtMenu/CxtMenu.js"></script>
+<script src="./components/DrawEdgeHandles/DrawEdgeHandles.js"></script>
+<script src="./components/ExpandCollapse/ExpandCollapse.js"></script>
+<script src="./components/Lasso/Lasso.js"></script>
+<script src="./components/UndoRedo/UndoRedo.js"></script>
+
+<!-- Custom Components -->
+	<script src="./components/Header/Header.js"></script>
+	<script src="./components/GiveTitle/GiveTitle.js"></script>
+    <script src="./components/AddNodeButton/AddNodeButton.js"></script>
+	<script src="./components/EditGraphStyle/EditGraphStyle.js"></script>
+    <script src="./components/ExportButtons/ExportButtons.js"></script>
+	<script src="./components/DragAndDropUpload/DragAndDropUpload.js"></script>
+	<script src="./components/ActivityHistory/ActivityHistory.js"></script>
+	<script src="./components/EditGraphStyle/EdgeArrowSource/EdgeArrowSource.js"></script>
+	<script src="./components/EditGraphStyle/EdgeArrowTarget/EdgeArrowTarget.js"></script>
+	<script src="./components/EditGraphStyle/EdgeColor/EdgeColor.js"></script>
+	<script src="./components/EditGraphStyle/EdgeLineType/EdgeLineType.js"></script>
+	<script src="./components/EditGraphStyle/GraphLayout/GraphLayout.js"></script>
+	<script src="./components/EditGraphStyle/NodeShape/NodeShape.js"></script>
+	<script src="./components/EditGraphStyle/NodeColor/NodeColor.js"></script>
+	<script src="./components/EditGraphStyle/SingleNodeEdit/SingleNodeEdit.js"></script>
+	<script src="./components/EditGraphStyle/SingleEdgeEdit/SingleEdgeEdit.js"></script>
+		
+</body>
+</html>

@@ -1,0 +1,46 @@
+select, .btn {
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px;
+    background-color: #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 100%;
+}
+
+.btn:hover, select:hover {
+    background: lightblue;
+}
+
+.btn-cancel {
+    background-color: red;
+    color: white;
+    opacity: 85%;
+}
+
+label {
+    font-weight: bold;
+    margin: 5px;
+}
+
+input {
+    border-radius: 5px;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-color: lightblue;
+    border-bottom-color: lightblue;
+}
+
+option {
+    background-color: lightcyan;
+}
+
+option:hover {
+    background-color: lightblue !important;
+}
+
+option::before {
+    margin: 50px;
+}

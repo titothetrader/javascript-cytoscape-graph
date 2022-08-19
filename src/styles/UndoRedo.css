@@ -1,0 +1,22 @@
+#undo-history {
+    z-index: 9999;
+    text-align: center;
+    position: fixed;
+}
+
+#undo-button {
+    width: 193%;
+    text-align: center;
+}
+
+#undo-content {
+    overflow: hidden;
+    display: none;
+    background-color: white;
+    opacity: .8;
+    border: 1px steelblue dotted;
+    border-radius: 5px;
+    width: 190%;
+    margin-left: 6px;
+    margin-top: -5px;
+}

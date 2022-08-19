@@ -1,0 +1,11 @@
+#graph {
+    height: 90vh;
+    width: 100vw;
+    left: 0;
+    position: fixed;
+    z-index: -1000;
+}
+
+.webkit-tap-highlight-color {
+    background-color: 'red';
+}

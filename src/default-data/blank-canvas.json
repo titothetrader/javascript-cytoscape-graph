@@ -1,0 +1,86 @@
+{
+    "elements": {
+        "nodes": [
+
+        ],
+        "edges": [
+        ]
+    },
+    "style": [
+        {
+            "selector": "node",
+            "style": {
+                "label": "data(id)"
+            }
+        },
+        {
+            "selector": "edge",
+            "style": {
+                "curve-style": "bezier",
+                "target-arrow-shape": "triangle"
+            }
+        },
+        {
+            "selector": ".eh-handle",
+            "style": {
+                "background-color": "red",
+                "width": 12,
+                "height": 12,
+                "shape": "ellipse",
+                "overlay-opacity": 0,
+                "border-width": 12,
+                "border-opacity": 0
+            }
+        },
+        {
+            "selector": ".eh-hover",
+            "style": {
+                "background-color": "red"
+            }
+        },
+        {
+            "selector": ".eh-source",
+            "style": {
+                "border-color": "red",
+                "border-width": 2
+            }
+        },
+        {
+            "selector": ".eh-target",
+            "style": {
+                "border-color": "blue",
+                "border-width": 2
+            }
+        },
+        {
+            "selector": ".eh-preview, .eh-ghost-edge",
+            "style": {
+                "line-color": "red",
+                "source-arrow-color": "red",
+                "target-arrow-color": "red"
+            }
+        },
+        {
+            "selector": ".eh-ghost-edge.eh-preview-active",
+            "style": {
+                "opacity": 0
+            }
+        }
+    ],
+    "data": {},
+    "zoomingEnabled": true,
+    "userZoomingEnabled": true,
+    "zoom": 1,
+    "minZoom": 1e-50,
+    "maxZoom": 1e+50,
+    "panningEnabled": true,
+    "userPanningEnabled": true,
+    "pan": {
+        "x": 0,
+        "y": 0
+    },
+    "boxSelectionEnabled": true,
+    "renderer": {
+        "name": "canvas"
+    }
+}

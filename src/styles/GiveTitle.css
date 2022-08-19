@@ -1,0 +1,18 @@
+.give-title-area {
+    margin: 15px auto;
+}
+
+.give-title-area input {
+    width: 18vw;
+}
+
+.graph-title {
+    position: absolute;
+    margin-left: 38vw;
+    padding: 2% 7%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 6px 6px 2px 1px rgba(139, 139, 255, 0.2);
+}

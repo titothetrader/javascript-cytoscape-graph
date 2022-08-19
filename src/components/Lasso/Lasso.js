@@ -1,0 +1,1 @@
+cy.lassoSelectionEnabled(false);    // FALSE is rectangle selection, TRUE is draw selection

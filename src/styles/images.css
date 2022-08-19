@@ -1,0 +1,15 @@
+.logo-container {
+    width: 100%;
+}
+
+.fa {
+    color: steelblue;
+}
+
+.fa-in-button {
+    color: white;
+}
+
+.fa-trash-o, .fa-eraser {
+    color: red;
+}

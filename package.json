@@ -1,0 +1,36 @@
+{
+  "name": "graphy-vanillajs",
+  "version": "1.0.3",
+  "main": "/dist/index.html",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "live-server": "live-server",
+    "build": "webpack watch",
+    "start": "webpack serve --open",
+    "dev": "webpack --mode development",
+    "prod": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "Graphy in Vanilla JavaScript",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "7.18.0",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "live-server": "^1.2.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@horizon.bankofamerica.com/~zkf26zo/graphy-vanillajs.git"
+  }
+}

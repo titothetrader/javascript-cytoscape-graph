@@ -1,0 +1,237 @@
+{
+    "elements": {
+        "nodes": [
+            {
+                "data": {
+                    "id": "one",
+                    "label": "Node 1"
+                },
+                "position": {
+                    "x": 365.0030111810877,
+                    "y": 438.00370901035564
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": ""
+            },
+            {
+                "data": {
+                    "id": "two",
+                    "label": "Node 2"
+                },
+                "position": {
+                    "x": 993.0075805288967,
+                    "y": 644.0032884009338
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": ""
+            },
+            {
+                "data": {
+                    "id": "three",
+                    "label": "Node 3"
+                },
+                "position": {
+                    "x": 323.4358964350786,
+                    "y": 124.4957204985748
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": ""
+            },
+            {
+                "data": {
+                    "id": "four",
+                    "label": "Node 4"
+                },
+                "position": {
+                    "x": 34.3747383847383,
+                    "y": 576.3343434234343
+                },
+                "group": "nodes",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": false,
+                "classes": ""
+            }
+        ],
+        "edges": [
+            {
+                "data": {
+                    "source": "one",
+                    "target": "two",
+                    "label": "Edge connecting Node 1 to Node 2",
+                    "id": "916784da-977e-4e8d-9cbe-3231065d1e29"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "group": "edges",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": true,
+                "classes": ""
+            },
+            {
+                "data": {
+                    "source": "two",
+                    "target": "four",
+                    "label": "Edge connecting Node 2 to Node 4",
+                    "id": "913484da-967e-4e8d-9gbe-3231065d1t29"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "group": "edges",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": true,
+                "classes": ""
+            },
+            {
+                "data": {
+                    "source": "three",
+                    "target": "one",
+                    "label": "Edge connecting Node 3 to Node 1",
+                    "id": "913483da-967e-4g8d-9gbe-3231765d1t29"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "group": "edges",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": true,
+                "classes": ""
+            },
+            {
+                "data": {
+                    "source": "one",
+                    "target": "three",
+                    "label": "Edge connecting Node 1 to Node 3",
+                    "id": "364657da-765g-4e8d-5ghy-3258735d1t29"
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0
+                },
+                "group": "edges",
+                "removed": false,
+                "selected": false,
+                "selectable": true,
+                "locked": false,
+                "grabbable": true,
+                "pannable": true,
+                "classes": ""
+            }
+        ]
+    },
+    "style": [
+        {
+            "selector": "node",
+            "style": {
+                "label": "data(id)"
+            }
+        },
+        {
+            "selector": "edge",
+            "style": {
+                "curve-style": "bezier",
+                "target-arrow-shape": "triangle"
+            }
+        },
+        {
+            "selector": ".eh-handle",
+            "style": {
+                "background-color": "red",
+                "width": 12,
+                "height": 12,
+                "shape": "ellipse",
+                "overlay-opacity": 0,
+                "border-width": 12,
+                "border-opacity": 0
+            }
+        },
+        {
+            "selector": ".eh-hover",
+            "style": {
+                "background-color": "red"
+            }
+        },
+        {
+            "selector": ".eh-source",
+            "style": {
+                "border-color": "red",
+                "border-width": 2
+            }
+        },
+        {
+            "selector": ".eh-target",
+            "style": {
+                "border-color": "blue",
+                "border-width": 2
+            }
+        },
+        {
+            "selector": ".eh-preview, .eh-ghost-edge",
+            "style": {
+                "line-color": "red",
+                "source-arrow-color": "red",
+                "target-arrow-color": "red"
+            }
+        },
+        {
+            "selector": ".eh-ghost-edge.eh-preview-active",
+            "style": {
+                "opacity": 0
+            }
+        }
+    ],
+    "data": {},
+    "zoomingEnabled": true,
+    "userZoomingEnabled": true,
+    "zoom": 1,
+    "minZoom": 1e-50,
+    "maxZoom": 1e+50,
+    "panningEnabled": true,
+    "userPanningEnabled": true,
+    "pan": {
+        "x": 0,
+        "y": 0
+    },
+    "boxSelectionEnabled": true,
+    "renderer": {
+        "name": "canvas"
+    }
+}
