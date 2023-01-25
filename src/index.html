@@ -78,7 +78,7 @@
 		let cy = cytoscape({
 			container: document.getElementById('graph'),
 			layout: {
-				name: 'circle'
+				name: 'dagre'
 			},
 			elements: elements,
 			style: graphStyle,
@@ -99,6 +99,7 @@
 			cy.resize();
 			cy.reset();
 		}
+		graphUpdate();
 	</script>
 
 <!-- Cytoscape Functionalities -->
